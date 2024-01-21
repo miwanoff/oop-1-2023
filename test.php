@@ -26,7 +26,7 @@ if (!$emp1->set_age(25)) {
     exit("Помилка обчислення віку");
 }
 
-echo $emp1->get_full_info();
+echo $emp1;
 
 $emp2 = new Employee("Ніколь", "Кідман", 20);
 echo $emp2->get_full_info();
@@ -46,9 +46,12 @@ $arr = [$emp, $emp1, $emp2];
 $company = new Company("Кит", $arr);
 
 print_r($company->get_employees());
+
 if ($company->checkUser("Ніколь", "Кідман")) {
     echo "!!!";
 } else {
     echo "???";
 }
 ;
+echo "\n";
+echo $company;

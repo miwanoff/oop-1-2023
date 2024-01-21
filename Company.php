@@ -51,4 +51,13 @@ class Company
         return false;
         // return $this->name === $name && $this->surname === $surname;
     }
+
+    public function __toString()
+    {
+        $str = $this->name . "\n";
+        foreach ($this->employees as $key => $employee) {
+            $str .= $employee->get_full_info() . "\n";
+        }
+		return $str;
+    }
 }

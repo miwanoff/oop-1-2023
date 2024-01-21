@@ -64,4 +64,8 @@ class Employee
     {
         return $this->name === $name && $this->surname === $surname;  
     }
+
+    public function __toString(){
+        return "{$this->get_info()} {$this->get_age()}";
+    }
 }
