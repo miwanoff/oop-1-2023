@@ -1,8 +1,10 @@
 <?php
 
 // Підключаємо оголошення класу
-require_once "Employee.php";
-require_once "Company.php";
+// require_once "Employee.php";
+// require_once "Company.php";
+
+include "autoload.php";
 // Оголошуємо об'єкт класу Employee
 $emp = new Employee();
 // Привласнюємо значення членам класу
