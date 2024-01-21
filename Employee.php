@@ -59,4 +59,9 @@ class Employee
     {
         return "{$this->get_info()} {$this->get_age()}";
     }
+
+    public function checkUser($name, $surname)
+    {
+        return $this->name === $name && $this->surname === $surname;  
+    }
 }

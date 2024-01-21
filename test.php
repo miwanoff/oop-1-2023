@@ -37,13 +37,18 @@ $arr = [$emp, $emp1, $emp2];
 
 // $company->set_employees($arr);
 
-
 // print_r($company->get_employees()) ;
 
 // $emp3 = new Employee("Ніколь1", "Кідман1", 30);
 
 // $company->add_employee($emp3);
 
-$company = new Company("Кит", $arr );
+$company = new Company("Кит", $arr);
 
-print_r($company->get_employees()) ;
+print_r($company->get_employees());
+if ($company->checkUser("Ніколь", "Кідман")) {
+    echo "!!!";
+} else {
+    echo "???";
+}
+;
